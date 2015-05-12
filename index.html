@@ -655,7 +655,6 @@ function agrandar_imagen(ano){
 		x2 = diesel[ano].alto2;
 		z = diesel[ano].width2;
 	};
-	alert(z)
 	$("#foto1").animate({
 		left: '30px',
 		height: h+"px",
@@ -1011,6 +1010,111 @@ $(document).ready(function(){
 
 
 	<script>
+	function elegir_grafico(anno){
+		var opcion3 = $("#opciones3").val();
+		var opcion4 = $("#opciones4").val();
+		var a = 0;
+		var b = 0;
+		var c = 0;
+		var d = 0;
+		var e = 0;
+		var f = 0;
+		switch(option3){
+			case "hidroelectrica3":
+				a = hid[anno].cash;
+				b = hid[anno].cash;
+				c = hid[anno].cash;
+			break;
+			case "carbon3":
+				a = carb[anno].cash;
+				b = carb[anno].cash;
+				c = carb[anno].cash;
+			break;
+			case "nuclear3":
+				a = nuc[anno].cash;
+				b = nuc[anno].cash;
+				c = nuc[anno].cash;
+			break;
+			case "solar3":
+				a = sol[anno].cash;
+				b = sol[anno].cash;
+				c = sol[anno].cash;
+			break;
+			case "biomasa3":
+				a = bio[anno].cash;
+				b = bio[anno].cash;
+				c = bio[anno].cash;
+			break;
+			case "gas3":
+				a = ga[anno].cash;
+				b = ga[anno].cash;
+				c = ga[anno].cash;
+			break;
+			case "eolica3":
+				a = eo[anno].cash;
+				b = eo[anno].cash;
+				c = eo[anno].cash;
+			break;
+			case "geotermica3":
+				a = geo[anno].cash;
+				b = geo[anno].cash;
+				c = geo[anno].cash;
+			break;
+			case "diesel3":
+				a = dies[anno].cash;
+				b = dies[anno].cash;
+				c = dies[anno].cash;
+			break;
+		};
+		switch(option4){
+			case "hidroelectrica4":
+				d = hid[anno].cash;
+				e = hid[anno].cash;
+				f = hid[anno].cash;
+			break;
+			case "carbon4":
+				d = carb[anno].cash;
+				e = carb[anno].cash;
+				f = carb[anno].cash;
+			break;
+			case "nuclear4":
+				d = nuc[anno].cash;
+				e = nuc[anno].cash;
+				f = nuc[anno].cash;
+			break;
+			case "solar4":
+				d = sol[anno].cash;
+				e = sol[anno].cash;
+				f = sol[anno].cash;
+			break;
+			case "biomasa4":
+				d = bio[anno].cash;
+				e = bio[anno].cash;
+				f = bio[anno].cash;
+			break;
+			case "gas4":
+				d = ga[anno].cash;
+				e = ga[anno].cash;
+				f = ga[anno].cash;
+			break;
+			case "eolica4":
+				d = eo[anno].cash;
+				e = eo[anno].cash;
+				f = eo[anno].cash;
+			break;
+			case "geotermica4":
+				d = geo[anno].cash;
+				e = geo[anno].cash;
+				f = geo[anno].cash;
+			break;
+			case "diesel4":
+				d = dies[anno].cash;
+				e = dies[anno].cash;
+				f = dies[anno].cash;
+			break;
+		};
+		
+	}	
 		
 		var lineChartData = {
 			labels : ["2015","2030","2050"],
@@ -1045,6 +1149,7 @@ $(document).ready(function(){
 			responsive: true
 		});
 	}
+	
 
 
 	</script>
