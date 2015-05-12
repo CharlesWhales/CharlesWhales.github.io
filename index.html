@@ -1010,7 +1010,7 @@ $(document).ready(function(){
 
 
 	<script>
-	function elegir_grafico(anno){
+	function elegir_grafico(){
 		var opcion3 = $("#opciones3").val();
 		var opcion4 = $("#opciones4").val();
 		var a = 0;
@@ -1021,96 +1021,96 @@ $(document).ready(function(){
 		var f = 0;
 		switch(option3){
 			case "hidroelectrica3":
-				a = hid[anno].cash;
-				b = hid[anno].cash;
-				c = hid[anno].cash;
+				a = hid.cash1;
+				b = hid.cash2;
+				c = hid.cash3;
 			break;
 			case "carbon3":
-				a = carb[anno].cash;
-				b = carb[anno].cash;
-				c = carb[anno].cash;
+				a = carb.cash1;
+				b = carb.cash2;
+				c = carb.cash3;
 			break;
 			case "nuclear3":
-				a = nuc[anno].cash;
-				b = nuc[anno].cash;
-				c = nuc[anno].cash;
+				a = nuc.cash1;
+				b = nuc.cash2;
+				c = nuc.cash3;
 			break;
 			case "solar3":
-				a = sol[anno].cash;
-				b = sol[anno].cash;
-				c = sol[anno].cash;
+				a = sol.cash1;
+				b = sol.cash2;
+				c = sol.cash3;
 			break;
 			case "biomasa3":
-				a = bio[anno].cash;
-				b = bio[anno].cash;
-				c = bio[anno].cash;
+				a = bio.cash1;
+				b = bio.cash2;
+				c = bio.cash3;
 			break;
 			case "gas3":
-				a = ga[anno].cash;
-				b = ga[anno].cash;
-				c = ga[anno].cash;
+				a = ga.cash1;
+				b = ga.cash2;
+				c = ga.cash3;
 			break;
 			case "eolica3":
-				a = eo[anno].cash;
-				b = eo[anno].cash;
-				c = eo[anno].cash;
+				a = eo.cash1;
+				b = eo.cash2;
+				c = eo.cash3;
 			break;
 			case "geotermica3":
-				a = geo[anno].cash;
-				b = geo[anno].cash;
-				c = geo[anno].cash;
+				a = geo.cash1;
+				b = geo.cash2;
+				c = geo.cash3;
 			break;
 			case "diesel3":
-				a = dies[anno].cash;
-				b = dies[anno].cash;
-				c = dies[anno].cash;
+				a = dies.cash1;
+				b = dies.cash2;
+				c = dies.cash3;
 			break;
 		};
 		switch(option4){
 			case "hidroelectrica4":
-				d = hid[anno].cash;
-				e = hid[anno].cash;
-				f = hid[anno].cash;
+				d = hid.cash1;
+				e = hid.cash2;
+				f = hid.cash3;
 			break;
 			case "carbon4":
-				d = carb[anno].cash;
-				e = carb[anno].cash;
-				f = carb[anno].cash;
+				d = carb.cash1;
+				e = carb.cash2;
+				f = carb.cash3;
 			break;
 			case "nuclear4":
-				d = nuc[anno].cash;
-				e = nuc[anno].cash;
-				f = nuc[anno].cash;
+				d = nuc.cash1;
+				e = nuc.cash2;
+				f = nuc.cash3;
 			break;
 			case "solar4":
-				d = sol[anno].cash;
-				e = sol[anno].cash;
-				f = sol[anno].cash;
+				d = sol.cash1;
+				e = sol.cash2;
+				f = sol.cash3;
 			break;
 			case "biomasa4":
-				d = bio[anno].cash;
-				e = bio[anno].cash;
-				f = bio[anno].cash;
+				d = bio.cash1;
+				e = bio.cash2;
+				f = bio.cash3;
 			break;
 			case "gas4":
-				d = ga[anno].cash;
-				e = ga[anno].cash;
-				f = ga[anno].cash;
+				d = ga.cash1;
+				e = ga.cash2;
+				f = ga.cash3;
 			break;
 			case "eolica4":
-				d = eo[anno].cash;
-				e = eo[anno].cash;
-				f = eo[anno].cash;
+				d = eo.cash1;
+				e = eo.cash2;
+				f = eo.cash3;
 			break;
 			case "geotermica4":
-				d = geo[anno].cash;
-				e = geo[anno].cash;
-				f = geo[anno].cash;
+				d = geo.cash1;
+				e = geo.cash2;
+				f = geo.cash3;
 			break;
 			case "diesel4":
-				d = dies[anno].cash;
-				e = dies[anno].cash;
-				f = dies[anno].cash;
+				d = dies.cash1;
+				e = dies.cash2;
+				f = dies.cash3;
 			break;
 		};
 		alert(0)
@@ -1121,93 +1121,93 @@ $(document).ready(function(){
 		
 	};
 	var hid = {
-		2015:{
+		cash1:{
 			altura:490
 	},
-		2030:{
+		cash2:{
 			altura:490
 	},
-		2050:{
+		cash3:{
 			altura:490
 	},
 	var carb = {
-		2015:{
+		cash1:{
 			altura:490
 	},
-		2030:{
+		cash2:{
 			altura:490
 	},
-		2050:{
+		cash3:{
 			altura:490
 	},
 	var nuc = {
-		2015:{
+		cash1:{
 			altura:490
 	},
-		2030:{
+		cash2:{
 			altura:490
 	},
-		2050:{
+		cash3:{
 			altura:490
 	},
 	var sol = {
-		2015:{
+		cash1:{
 			altura:490
 	},
-		2030:{
+		cash2:{
 			altura:490
 	},
-		2050:{
+		cash3:{
 			altura:490
 	},
 	var geo = {
-		2015:{
+		cash1:{
 			altura:490
 	},
-		2030:{
+		cash2:{
 			altura:490
 	},
-		2050:{
+		cash3:{
 			altura:490
 	},
 	var dies = {
-		2015:{
+		cash1:{
 			altura:490
 	},
-		2030:{
+		cash2:{
 			altura:490
 	},
-		2050:{
+		cash3:{
 			altura:490
 	},
 	var bio = {
-		2015:{
+		cash1:{
 			altura:490
 	},
-		2030:{
+		cash2:{
 			altura:490
 	},
-		2050:{
+		cash3:{
 			altura:490
 	},
 	var ga = {
-		2015:{
+		cash1:{
 			altura:490
 	},
-		2030:{
+		cash2:{
 			altura:490
 	},
-		2050:{
+		cash3:{
 			altura:490
 	},
 	var eo = {
-		2015:{
+		cash1:{
 			altura:490
 	},
-		2030:{
+		cash2:{
 			altura:490
 	},
-		2050:{
+		cash3:{
 			altura:490
 	},
 	};
@@ -1240,7 +1240,7 @@ $(document).ready(function(){
 			]
 
 		}
-
+<button Onclick="elegir_grafico()">Mostrar datos</button>
 	window.onload = function(){
 		var ctx = document.getElementById("canvas").getContext("2d");
 		window.myLine = new Chart(ctx).Line(lineChartData, {
